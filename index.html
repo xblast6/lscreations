@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ls Creations</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Atma:wght@300;400;500;600;700&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body id="body">
+    <header>
+        <nav>
+            <div class="container-logo-nav logo" >
+                <a href="index.html"><img src="img/logo/logo.png" alt="Logo Ls Creations"></a>
+            </div>
+
+            <div class="container-catalogo-nav">
+                <button class="btn-catalogo-nav" id="btnCatalogoNav">Catalogo</button>
+                <p class="separazione">|</p>
+                <input type="text" class="inp-text" id="inpCerca" placeholder="Cerca nel catalogo...">
+            </div>
+
+            <div class="container-menu-laterale">
+                <a href="https://wa.me/393515491724?text=Ciao%20posso%20avere%20informazioni?" class="btn-whatsapp">
+                    <p>Sara</p>
+                    <ion-icon name="logo-whatsapp"></ion-icon>
+                </a>
+                <p class="separazione">|</p>
+                <div class="div-icona-menu-laterale" id="iconaMenuLaterale">
+                    <ion-icon class="icona-menu-laterale" name="menu"></ion-icon>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div id="menuLaterale">
+        <ul>
+            <li class="voci-menu" id="nostraStoria">La nostra storia</li>
+            <li class="voci-menu" id="contatti">Contatti</li>
+            <li class="voci-menu" id="spedizione">Spedizione / Ritiro</li>
+            <li class="voci-menu" id="scrivici">Non hai trovato ciò che cerchi? Scrivici!</li>
+            <li class="voci-menu" id="domandeFrequenti">Domande frequenti</li>
+        </ul>
+    </div>
+    <div id="spinner" class="spinner hidden"></div>
+
+    <main id="main">
+        <section class="hero-section" id="heroSection">
+            <div class="contenitore-hero" id="top">
+                <img src="img/banner mensole.png" alt="">
+                <h1 class="titoli">Benvenuti nel mondo di LS-Creations!</h1>
+            </div>
+        </section>
+        </div>
+            <p class="titoli">Dai un tocco di carattere a ciò che ti circonda! Personalizza oggetti di tutti i giorni e sorprendi chi ami!</p>
+        </div>
+        <section id="homeImagesSection">
+            <div class="contenitore-home">
+                <div id="sinistraPiccolaSopra" class="home-image home-piccola">
+                    <!-- Immagine per "sinistra piccola sopra" -->
+                </div>
+                <div id="sinistraMediaCentro" class="home-image home-media">
+                    <!-- Immagine per "sinistra media centro" -->
+                </div>
+                <div id="sinistraPiccolaSotto" class="home-image home-piccola">
+                    <!-- Immagine per "sinistra piccola sotto" -->
+                </div>
+            </div>
+            <div id="centroGrande" class="home-image home-grande">
+              <!-- Immagine per "centro grande" -->
+            </div>
+            <div class="contenitore-home">
+                <div id="destraMediaSopra" class="home-image home-media">
+                    <!-- Immagine per "destra media sopra" -->
+                  </div>
+                  <div id="destraMediaSotto" class="home-image home-media">
+                    <!-- Immagine per "destra media sotto" -->
+                  </div>
+            </div>
+            
+          </section>
+    </main>
+
+    <footer id="footer">
+        <div class="contenitore-social">
+            <div class="contenitore-icona-social">
+                <a target="_blank" href="https://wa.me/393515491724?text=Ciao%20posso%20avere%20informazioni?">Scrivici su WhatsApp</a>
+                <ion-icon name="logo-whatsapp"></ion-icon>
+            </div>
+            <div class="contenitore-icona-social">
+                <a target="_blank" href="https://www.facebook.com/lspartyeventsecreations/">Seguici su Facebook</a>
+                <ion-icon name="logo-facebook"></ion-icon>
+            </div>
+
+            <div class="contenitore-icona-social">
+                <a target="_blank" href="https://www.instagram.com/_ls.creations_/">Seguici su Instagram</a>
+                <ion-icon name="logo-instagram"></ion-icon>
+            </div>
+
+        </div>
+    </footer>
+</body>
+<!--SCRIPT PER COLLEGARSI AD ION-ICON-->
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<!--COLLEGAMENTO AL MIO SCRIPT-->
+
+<script src="script.js"></script>
+<script src="menu.js"></script>
+<script src="home.js"></script>
+</html>
