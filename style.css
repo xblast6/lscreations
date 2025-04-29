@@ -437,7 +437,7 @@ main {
   left: 15%;
   top: 1%;
   margin: 20px;
-  padding: 10px 20px;
+  padding: 15px 20px;
   font-size: var(--testo);
   font-family: var(--font-nav);
   border-radius: var(--border-radius);
@@ -449,6 +449,10 @@ main {
   justify-content: center;
   gap: 5px;
 }
+
+.btn-back ion-icon, .btn-back p {
+  cursor: pointer;
+} 
 
 .contenitore-prodotto-padre {
   display: flex;

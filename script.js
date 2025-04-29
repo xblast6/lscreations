@@ -136,7 +136,7 @@ function renderProdotti(categoria) {
 function renderVarianti(prodotto, categoria) {
   main.innerHTML = "";
 
-  const btnBack = document.createElement("div");
+  const btnBack = document.createElement("button");
   btnBack.classList.add("btn-back");
   btnBack.innerHTML = `<ion-icon name="arrow-back-outline"></ion-icon><p>Torna ai prodotti</p>`;
   btnBack.addEventListener("click", () => renderProdotti(categoria));
@@ -250,4 +250,4 @@ function renderSearchResults(query) {
 /* ---------------------------
    AVVIO
 --------------------------- */
-renderCatalogo(); // mostra il catalogo di default
+/* renderCatalogo(); */ // mostra il catalogo di default
