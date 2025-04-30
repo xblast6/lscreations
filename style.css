@@ -158,7 +158,8 @@ h3,
 h4,
 h5,
 h6,
-ion-icon {
+ion-icon,
+button {
     margin: 0;
     padding: 0;
 }
@@ -194,7 +195,7 @@ body {
 header {
     position: fixed;
     top: 0;
-    width: 100vw;
+    width: 100%;
     z-index: 100;
 }
 
@@ -203,9 +204,8 @@ nav {
     align-items: center;
     justify-content: center;
     gap: 30em;
-    padding: 15px 0;
+    padding: 1em 0;
     background-color: var(--rosa-chiaro);
-    /*TEMPORANEO*/
     box-shadow: 0px 0.01px 5px 0.01px var(--rosa-logo);
     border-bottom: 1px solid var(--bordi);
     margin-bottom: 200px;
@@ -225,16 +225,15 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 15px;
+    gap: 1em;
 }
 
 .btn-catalogo-nav {
-    border: none;
     background-color: var(--colore-testo);
     color: var(--bianco);
     font-size: var(--testo);
     border-radius: var(--border-radius);
-    padding: 7px 15px;
+    padding: 0.5em 0.8em;
     border: 2px solid var(--bordi);
     cursor: pointer;
     font-family: var(--font-nav);
@@ -248,7 +247,7 @@ nav {
 }
 
 .inp-text {
-    padding: 7px 15px;
+  padding: 0.5em 0.8em;
     border-radius: var(--border-radius);
     border: 2px solid var(--bordi);
     font-size: var(--testo);
@@ -483,35 +482,55 @@ main {
 } */
 
 #menuLaterale {
-  width: 250px;
+  width: 15%;
   height: 100vh;
   background-color: var(--colore-testo);
   position: fixed;
   right: 0;
-  transform: translateX(400px); /* Menu nascosto fuori schermo a destra */
+  top: 0;
+  margin-top: 6em;
+  transform: translateX(100%); /* Menu nascosto fuori schermo a destra */
   transition: transform 0.6s cubic-bezier(.215, .61, .355, 1);
   z-index: 20; /* Assicura che il menu sia sopra gli altri elementi */
   display: flex;
-  
   flex-direction: column;
   padding: 20px 0;
   gap: 10px;
 }
 
+#catalogoMenu {
+  display: none;
+}
+
+#menuLaterale ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
 .voci-menu {
   cursor: pointer;
   list-style: none;
-  margin-bottom: 20px;
   font-family: var(--font-nav);
   color: var(--bianco);
   font-weight: var(--peso-titolo);
+  z-index: 10;
 }
 
 #menuLaterale.menu-aperto {
   transform: translateX(0); /* Menu visibile */
 }
 
+#saraWp {
+  display: none;
+  align-items: center;
+  gap: 0.5em;
+}
 
+#saraWp a {
+  color: white;
+  text-decoration: none;
+}
 
 /*MENU LATERALE - MENU LATERALE - MENU LATERALE - MENU LATERALE - MENU LATERALE */
 
@@ -668,10 +687,11 @@ main {
   
   /* Navbar e header: layout in colonna con gap e padding ridotti */
   nav {
-    flex-direction: column;
+    align-items: center;
     gap: 10px;
     padding: 20px;
     justify-content: center;
+    margin-bottom: 0;
   }
 
   .separazione {
@@ -689,17 +709,27 @@ main {
     width: 80px;
   }
   .container-catalogo-nav {
-    flex-direction: column;
+    align-items: center;
     gap: 8px;
     width: 100%;
   }
+
+  .btn-catalogo-nav {
+    display: none;
+  }
+
   .inp-text {
     width: 100%;
     margin-top: 10px;
   }
 
+  .btn-whatsapp {
+    display: none;
+  }
+
   main {
     padding: 20px;
+    margin-top: 7em;
   }
 
   .contenitore-hero {
@@ -713,7 +743,7 @@ main {
   
   /* Card del catalogo: adattamento dimensionale per smartphone */
   .card-catalogo {
-    width: 15em;  /* dimensione ridotta per schermi piccoli */
+    width: 20em;  /* dimensione ridotta per schermi piccoli */
     height: auto;
     margin: 0 auto;
   }
@@ -744,15 +774,37 @@ main {
   
   /* Menu laterale: dimensione ridotta e animazione adattata per schermi piccoli */
   #menuLaterale {
-    width: 200px;
-    transform: translateX(200px); /* menu nascosto parzialmente fuori schermo */
+    width: 60%;
+    transform: translateX(100%); /* menu nascosto parzialmente fuori schermo */
   }
   #menuLaterale.menu-aperto {
     transform: translateX(0);
   }
 
+  #saraWp {
+    display: flex;
+  }
+
+  #catalogoMenu {
+    display: flex;
+  }
+
   .btn-back {
     display: none;
+  }
+
+  .sezione-catalogo {
+    padding: 0;
+
+  }
+
+  .contenitore-info-catalogo {
+    max-width: 100%;
+  }
+
+  .contenitore-social {
+    flex-direction: column;
+    margin-top: 1em;
   }
 }
 
@@ -817,5 +869,9 @@ main {
   }
   #menuLaterale.menu-aperto {
     transform: translateX(0);
+  }
+
+  #saraWp {
+    display: flex;
   }
 }

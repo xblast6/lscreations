@@ -43,6 +43,17 @@ document.addEventListener("click", e => {
 --------------------------- */
 btnCatalogoNav.addEventListener("click", renderCatalogo);
 
+// Collega la voce del menu laterale alla funzione renderCatalogo
+const voceCatalogoMenu = document.getElementById("catalogoMenu");
+voceCatalogoMenu.addEventListener("click", () => {
+  renderCatalogo();
+  // Chiude il menu e rimuove il blur
+  menuLaterale.classList.remove("menu-aperto");
+  main.classList.remove("blur");
+  footer.classList.remove("blur");
+});
+
+
 function renderCatalogo() {
   main.innerHTML = "";
   const sezioneCatalogo = document.createElement("section");
