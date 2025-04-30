@@ -175,6 +175,7 @@ button {
     --whatsapp: #25D366;
     --titoli: 2em;
     --testo: 1.15em;
+    --testo-mobile:0.8em;
     --border-radius: 25pt;
     --font-nav: "Montserrat Alternates", sans-serif;
     --font-titoli: "Alex Brush", cursive;
@@ -721,6 +722,10 @@ main {
   .inp-text {
     width: 100%;
     margin-top: 10px;
+  }
+  
+  .inp-text::placeholder{
+    font-size: var(--testo-mobile);
   }
 
   .btn-whatsapp {
